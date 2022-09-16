@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    scroll-behavior: smooth;
+
+    
+    
+}
+
+@font-face {
+
+    font-family:'gistesy' ;
+    src: url('/assets/Gistesy.ttf');
+}
+
+header {
+
+    height: 10vh;
+    background-color: #184D47;
+}
+.header {
+
+    max-width: 1100px;
+    height: 11vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logoimg img {
+
+    width: 190px;
+    height: 190px;
+    
+}
+.menu{
+
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul,
+.menu li {
+
+    list-style: none;
+}
+
+.menu ul {
+
+    display: flex;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    text-transform: uppercase;
+
+}
+.menu li a:hover,
+.menu .active a {
+
+
+    color: #c3cdb2;
+
+}
+
+.menu_opener {
+
+    display: none;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 10vh);
+    width: 100%;
+    background-color: #c3cdb2;
+    justify-content: center;
+    text-align: center;
+   
+
+}
+.banner h1 {
+
+    font-family: 'League spartan';
+    font-size: 100px;
+    color: #065216;
+    font-weight:700;
+    
+}
+.banner h3 {
+
+    font-family: 'gistesy';
+    font-size: 40px;
+    color: #065216;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+button {
+    margin-bottom: 50px;
+    cursor: pointer;
+   --button_radius: 0.75em;
+   --button_color: #e8e8e8;
+   --button_outline_color: #065216;
+   font-size: 17px;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+  }
+  
+  .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75em 5.0em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+   transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+   transform: translateY(0);
+  }
+.banner .linha {
+
+    width: 160px;
+    height: 3px;
+    background-color: #065216;
+    align-self: center;
+    margin-bottom: 20px;
+}
+  .banner p {
+    
+    font-family: 'League spartan';
+    color: #065216;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+  }
+  .banner img {
+
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 65%;
+    right: 0;
+  }
+article  {
+
+    background-color: #D6EFC7;
+    padding: 80px;
+  
+}
+.row h3 {
+
+    color: #065216;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container .row {
+
+    margin-top: 40px;
+}
+.container h5  {
+
+    color: #184D47;
+    font-size: 18px;
+}
+.container strong {
+
+    font-size: 25px;
+}
+section{
+
+    background-color: #c3cdb2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    
+}
+section h2 {
+
+    color: #065216;
+    font-family: 'gistesy';
+    font-size: 30px;
+}
+section h2 span {
+
+    color: #065216;
+    font-size: 20px;
+    font-family: 'League spartan';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.imagens {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 99;
+    
+}
+.imagens img {
+    display: flex;
+    width: 40%;
+    height: 300px;
+    border-radius: 100% 0% 97% 3% / 30% 62% 38% 70%   ;
+    padding: 30px;
+   
+}
+.endereco {
+
+    background-color: #184D47;
+    color: #c3cdb2;
+    font-family: 'League spartan';
+    text-align: center;
+    
+    
+}
+.endereco h2 {
+
+    font-size: 50px;
+}
+.endereco iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+footer {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #c3cdb2;
+    text-align: center;
+    font-family: 'Montserrat'
+
+}
+
+footer .footer_1 {
+
+    display:flex ;
+    flex-direction: column;
+
+}
+footer .footer_1 h5 {
+    font-family: 'League spartan';
+}
+footer .footer_1 p {
+
+    font-size: 20px;
+}
+footer .footer_2 {
+
+    flex: 1;
+}
+
+footer .footer2 h5 {
+
+    font-family: 'League spartan';
+    font-size: 20px;
+}
+
+.copy {
+    text-align: center;
+    background-color: #c3cdb2;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+   
+    
+}
+.copy h6, h5 {
+
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-style: italic;
+   
+}
+
+
+
+
+
+@media (max-width:856px) {
+    
+   .header{
+
+    align-items: center;
+   }
+    nav {
+        display: none;
+    }
+
+    .banner h1 {
+
+        font-size: 50px;
+    }
+    .banner h3 {
+
+        font-size: 30px;
+    }
+    .banner p {
+
+        z-index: 99;
+    }
+    .banner img {
+
+        width: 200px;
+        height: 200px;
+        top: 80%;
+    }
+    .logoimg  {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:650px) {
+
+    .imagens img {
+        display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 100% 0% 97% 3% / 30% 62% 38% 70%   ;
+    padding: 30px;
+
+    }
+    .container h5  {
+        font-size: 14px;
+        margin-top: 90px;
+    }
+    .container strong {
+    
+        font-size: 16px;
+    }
+    article  {
+
+        background-color: #D6EFC7;
+        padding: 10px;
+        text-align: center;
+
+      
+    }
+}
+
+@media (max-width:415px) {
+    .endereco h2 {
+
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+}
+
